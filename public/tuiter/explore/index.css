@@ -117,6 +117,7 @@
 .wd-following-smaller-font {
     font-size: 12px;
     font-weight:bold;
+    /* padding-left: 5px; */
 }
 
 .wd-user-handle {
