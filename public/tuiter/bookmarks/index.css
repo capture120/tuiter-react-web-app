@@ -1,0 +1,103 @@
+.wd-all-bookmarks {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wd-all-bookmarks > .wd-all-bookmarks-text {
+    padding-left: 30px;
+}
+
+.wd-triple-circle-top {
+    position: relative;
+    left: 20%;
+}
+
+.wd-triple-circle {
+    position: relative;
+    left: 20px;
+}
+
+.wd-ttr-tuit {
+    max-width: 550px;
+    width: 100%;
+    display: flex; 
+
+    border-width: 1px;
+
+    border-style: solid;
+  
+    border-color: #AAAAAA;
+  
+    border-top: none;
+  
+    padding: 10px;
+ }
+
+
+ .wd-ttr-tuit:first-child {
+
+    border-top: 1px solid
+  
+                #AAAAAA;
+  
+  }
+
+.wd-ttr-tuit-avatar-logo {
+    width: 48px;
+    border-radius: 50%;
+ }
+ 
+  
+ 
+ .wd-ttr-tuit-image {
+    width: 50%;
+
+ }
+
+ .wd-ttr-column-left {
+
+    width: 60px;
+ 
+ }
+ 
+ .wd-ttr-column-right {
+ 
+    max-width: 490px;
+ 
+    width: 100%;
+ 
+ }
+
+ .wd-ttr-rounded-border {
+
+    border-radius: 15px;
+ 
+ }
+
+ .wd-ttr-tuit-heading {
+
+    font-weight: bold;
+ 
+    margin-bottom: 10px;
+ }
+
+.wd-handle-date {
+    font-size: 0.8em;
+    font-weight: 100;
+    color: gray;
+}
+
+
+.wd-bottom-icons {
+    font-weight: 100;
+    color: gray;
+    padding-right: 5px;
+}
+
+.wd-red-icon {
+    color: red;
+    padding-right: 5px;
+}
+ 
+ /* ../../images/owl.jpg */

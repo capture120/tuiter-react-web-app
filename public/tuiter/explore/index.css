@@ -1,0 +1,132 @@
+
+
+ /* Search Bar */
+ .wd-tuiter-search  {
+    position: relative;
+    padding-right: 40px;
+ }
+ .wd-tuiter-search  .fas.fa-search {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+ }
+ .wd-tuiter-search > .wd-tuiter-gear {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    left: 70px;
+ }
+ .wd-tuiter-search input {
+    background-color: #EEEEEE;
+    height: 40px;
+    padding-left: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Tuiter explore tabs */
+.wd-tuiter-search .wd-tuiter-explore-tabs > ul {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+}
+.wd-tuiter-search .wd-tuiter-explore-tabs > ul > li {
+    margin-left: 15px;
+}
+.wd-tuiter-search .wd-tuiter-explore-tabs .wd-explore-tabs-active {
+    font-weight: 400;
+    color: black;
+    border-bottom-color: blue;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+}
+.wd-tuiter-search .wd-tuiter-explore-tabs .wd-explore-tabs-other {
+    font-weight: 400;
+    color: gray;
+}
+
+/* Tuiter explore main image */
+.wd-tuiter-explore-main-image {
+    position: relative;
+    border-style: "solid";
+    border-width: 1px;
+    border-color: #c3bfbf;
+}
+.wd-tuiter-explore-main-image-text {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Tuiter Trending Topics */
+.wd-tuiter-explore-trending {
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3bfbf;
+}
+.wd-tuiter-trending-topics {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    /* display: flex; */
+}
+.wd-tuiter-trending-topics > li {
+    margin-top: 15px;
+}
+
+.wd-tuiter-trending-topics .wd-tuiter-trending-category {
+    font-size: 10px;
+    font-weight: 400;
+    color: gray;
+}
+
+.wd-tuiter-trending-topics .wd-tuiter-trending-category > i {
+    
+}
+
+.wd-tuiter-trending-topics .wd-tuiter-trending-topic {
+   font-size: 15px;
+   font-weight: 400;
+   color: rgb(0, 0, 0);
+}
+
+.wd-tuiter-trending-topics .wd-tuiter-trending-topic-likes {
+   font-size: 10px;
+   font-weight: 400;
+   color: gray;
+}
+
+.wd-ellipsis {
+    position:absolute;
+    left: 95%;
+}
+
+/**/
+
+.wd-btn-spacing {
+    margin-top: 10px;
+}
+
+.wd-following-smaller-font {
+    font-size: 12px;
+    font-weight:bold;
+}
+
+.wd-user-handle {
+    font-size: 10px;
+    color: gray;
+    font-weight:lighter
+}
+
+.wd-input-icon {
+    position: absolute;
+    top: 13px;
+    left: 25px;
+}

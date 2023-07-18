@@ -1,0 +1,62 @@
+/* Navigation Bar in Left Column */
+.wd-tuiter-navigation {
+
+    list-style-type: none;
+ 
+    padding: 0;
+ 
+    margin: 0;
+ 
+    color: black;
+ 
+ }
+.wd-tuiter-navigation > li > a {
+    color: black;
+    text-decoration: none;
+}
+.wd-tuiter-navigation > li {
+    padding: 5px;
+
+    margin-bottom: 15px;
+ 
+    white-space: nowrap;
+ 
+    font-size: 1.0em;
+ 
+    text-align: left;
+ 
+    cursor: pointer;
+}
+.wd-tuiter-navigation > li > a > i {
+
+    width: 30px;
+ 
+    text-align: center;
+ 
+}
+.wd-tuiter-navigation > li.wd-tuit-button {
+
+    height: 30px;
+ 
+    background-color: rgb(29, 155, 240);
+ 
+    font-weight: bold;
+ 
+    text-align: center !important;
+ 
+    margin: auto;
+ 
+    margin-top: 10px;
+ 
+    border-radius: 25px;
+ 
+ }
+ .wd-tuiter-navigation > li.wd-tuit-button > a {
+ 
+    color: white;
+ 
+    position: relative;
+ 
+    top: 5px;
+ 
+ }
