@@ -1,5 +1,5 @@
 function ForLoops() {
-    let stringArray1 = ['string1', 'string3'];
+    let stringArray1 = ['string1', 'string2'];
     let stringArray2 = [];
     for (let i = 0;
          i < stringArray1.length;
