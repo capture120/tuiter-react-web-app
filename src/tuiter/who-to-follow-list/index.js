@@ -12,6 +12,8 @@ const WhoToFollowList = () => {
                     <WhoToFollowListItem
                         key={who._id}
                         who={who} />
+                        // * Github Copilot: key is a special prop that React uses to keep track of the elements in the list *
+                        // NOTE: YOU CANNOT USE IT FOR YOURSELF AS A VARIABLE
                 )
             }
         </ul>
