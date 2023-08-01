@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 123,
+        "topic": "Flying",
+        "userName": "Cool Owl",
+        "title": "This is a very cool owl! Cool owls are awesome.",
+        "time": "2h",
+        "image": "owl.jpg",
+        "liked": true,
+        "replies": 40,
+        "retuits": 104,
+        "likes": 358,
+        "handle": "@owl1",
+        "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nisl. Aliquam erat volutpat. Sed efficitur faucibus nisl non dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nisl. Aliquam erat volutpat. Sed efficitur faucibus nisl non dictum."
+    },
+    {
+        "_id": 234,
+        "topic": "Hooting",
+        "userName": "Chill Owl",
+        "title": "This is a very chill owl! Chill owls are awesome.",
+        "time": "2h",
+        "image": "owl.jpg",
+        "liked": true,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 1345,
+        "handle": "@owl2",
+        "tuit": "Integer sodales risus vel urna maximus, semper condimentum magna faucibus. Morbi vitae sodales dui."
+    },
+    {
+        "_id": 345,
+        "topic": "Pecking",
+        "userName": "Calm Owl",
+        "title": "This is a very calm owl! Calm owls are awesome.",
+        "time": "4d",
+        "image": "owl.jpg",
+        "liked": true,
+        "replies": 10,
+        "retuits": 11,
+        "likes": 55,
+        "handle": "@owl3",
+        "tuit": "Cras pulvinar, metus id molestie finibus, enim turpis euismod mauris, eget hendrerit nisl lorem nec ante. Donec fermentum laoreet quam, sit amet posuere nunc elementum id."
+    }
+]
