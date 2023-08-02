@@ -1,10 +1,16 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
+import "./styles.css"
+
 import { IconContext } from "react-icons";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import { BsDot } from "react-icons/bs";
+import { RxCross2 } from "react-icons/rx"
 
-const TuitHomeItem = (
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "../reducers/tuits-reducer";
+
+const TuitItem = (
     {
         tuit = {
             "_id": 345,
@@ -20,6 +26,11 @@ const TuitHomeItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return (
         <li className="list-group-item">
             <div className="row">
@@ -28,6 +39,8 @@ const TuitHomeItem = (
                 </div>
                 <div className="col-10 ms-4 ps-4 ps-xxl-3">
                     <div>
+                        <RxCross2 className="float-end wd-button"
+                            onClick={() => deleteTuitHandler(tuit._id)} />
                         <span class="fw-bold">{tuit.userName}</span>
                         <span className="ms-2 ps-1">
                             <IconContext.Provider value={{ color: "blue" }}>
@@ -45,4 +58,4 @@ const TuitHomeItem = (
     )
 };
 
-export default TuitHomeItem;
+export default TuitItem;

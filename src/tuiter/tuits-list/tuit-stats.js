@@ -19,13 +19,15 @@ const TuitStats = (
         }
     }
 ) => {
-    const [cur_tuit, setLikes] = useState({ ...tuit });
+    // const [cur_tuit, setLikes] = useState({ ...tuit });
+    const dispatch = useDispatch();
     const likePressedEvent = () => {
-        if (cur_tuit.liked) {
-            setLikes({ ...cur_tuit, liked: false, likes: cur_tuit.likes - 1 });
-        } else {
-            setLikes({ ...cur_tuit, liked: true, likes: cur_tuit.likes + 1 });
-        }
+        // if (cur_tuit.liked) {
+        //     setLikes({ ...cur_tuit, liked: false, likes: cur_tuit.likes - 1 });
+        // } else {
+        //     setLikes({ ...cur_tuit, liked: true, likes: cur_tuit.likes + 1 });
+        // }
+        dispatch(likeTuit(tuit));
     }
     return (
         <div className="row ms-5 ps-3">
@@ -48,11 +50,11 @@ const TuitStats = (
             <div class="col-3">
                 <div className="row">
                     <span className="col-2">
-                        {cur_tuit.liked ? <IconContext.Provider value={{ color: "red" }}>
+                        {tuit.liked ? <IconContext.Provider value={{ color: "red" }}>
                             <AiFillHeart className="wd-button" onClick={likePressedEvent} />
                         </IconContext.Provider> : <AiOutlineHeart className="wd-button" onClick={likePressedEvent} />}
                     </span>
-                    <span className="col-6">{cur_tuit.likes}</span>
+                    <span className="col-6">{tuit.likes}</span>
                 </div>
             </div>
             <div className="col-3">
