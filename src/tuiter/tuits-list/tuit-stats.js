@@ -5,7 +5,8 @@ import { IconContext } from "react-icons";
 import { BiMessageRounded, BiShare } from "react-icons/bi";
 import { AiFillHeart, AiOutlineRetweet, AiOutlineHeart } from "react-icons/ai";
 
-import { likeTuit } from "../reducers/tuits-reducer.js";
+// import { likeTuit } from "../reducers/tuits-reducer.js";
+import { updateTuitThunk } from "../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 const TuitStats = (
@@ -22,12 +23,11 @@ const TuitStats = (
     // const [cur_tuit, setLikes] = useState({ ...tuit });
     const dispatch = useDispatch();
     const likePressedEvent = () => {
-        // if (cur_tuit.liked) {
-        //     setLikes({ ...cur_tuit, liked: false, likes: cur_tuit.likes - 1 });
-        // } else {
-        //     setLikes({ ...cur_tuit, liked: true, likes: cur_tuit.likes + 1 });
-        // }
-        dispatch(likeTuit(tuit));
+        if (tuit.liked === true) {
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: false}))
+        } else {
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true}))
+        }
     }
     return (
         <div className="row ms-5 ps-3">
