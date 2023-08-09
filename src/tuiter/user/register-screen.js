@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
-import { loginThunk } from "../services/auth-thunks";
+import { registerThunk } from "../services/auth-thunks";
 
-function LoginScreen() {
+function RegisterScreen() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const _id = (new Date()).getTime()+'';
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const handleLogin = async () => {
+    const handleRegistration = async () => {
         try {
-            await dispatch(loginThunk({ username, password }));
-            navigate("/tuiter/profile");
+            await dispatch(registerThunk({ username, password, _id }));
+            navigate("/tuiter/home");
         } catch (e) {
             alert(e);
         }
     };
     return (
         <div>
-            <h1>Login Screen</h1>
+            <h1>Registration Screen</h1>
             <div className="mt-2">
                 <label>Username</label>
                 <input className="form-control" type="text" value={username}
@@ -30,10 +31,10 @@ function LoginScreen() {
                     onChange={(event) => setPassword(event.target.value)} />
             </div>
             <button className="btn btn-primary mt-2"
-                onClick={handleLogin}>
-                Login
+                onClick={handleRegistration}>
+                Register
             </button>
         </div>
     );
 }
-export default LoginScreen;
+export default RegisterScreen;
