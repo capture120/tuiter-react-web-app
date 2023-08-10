@@ -1,6 +1,10 @@
 import axios from 'axios';
 
 // const SERVER_API_URL = 'http://localhost:4000/api';
+/* 
+    for local development use local host.
+    to make the proper requests to the node server set link to where it is hosted (e.g. Heroku, Render.com)
+*/
 const SERVER_API_URL = process.env.REACT_APP_API_BASE;
 const USERS_URL = `${SERVER_API_URL}/users`; // URL to auth controller
 
