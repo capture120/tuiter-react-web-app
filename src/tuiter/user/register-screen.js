@@ -6,12 +6,11 @@ import { registerThunk } from "../services/auth-thunks";
 function RegisterScreen() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const _id = (new Date()).getTime()+'';
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const handleRegistration = async () => {
         try {
-            await dispatch(registerThunk({ username, password, _id }));
+            await dispatch(registerThunk({ username, password}));
             navigate("/tuiter/home");
         } catch (e) {
             alert(e);
